@@ -108,7 +108,8 @@ a {
 }
 
 .header-contacts {
-    display: block;
+    display: flex;
+    align-items: center;
     padding:32px 0px;
 
     font-weight: 500;
@@ -118,6 +119,12 @@ a {
 
     color: var(--text-color);
 }
+
+.contacts-icon {
+    margin-right: 10px;
+    fill: currentColor;
+}
+
 /* ----------------------------Hero---------------------- */
 .section.hero {
     text-align: center;
@@ -168,6 +175,19 @@ a {
 .advantage-item:not(:last-child) {
     margin-right: 30px;
 }
+
+.icon-wrap {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
+
+    background: #F5F4FA;
+    border-radius: 4px;
+}
+
 
 .advantage-title {
     margin-bottom: 10px;
@@ -223,7 +243,6 @@ a {
 
 .teammate-item {
     width: 270px;
-    height: 368px;
 
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -235,9 +254,12 @@ a {
     margin-right: 30px;
 }
 
-.teammate-name {
-    margin-top: 30px;
+.teammate-wrap {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
 
+.teammate-name {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
@@ -246,7 +268,6 @@ a {
 
 .teammate-position {
     margin-top: 10px;
-    margin-bottom: 30px;
 
     font-size: 16px;
     line-height: 1.19;
@@ -254,6 +275,37 @@ a {
     color: var(--text-color);
 }
 
+.social-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 16px;
+} 
+
+
+.social-item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.social-link {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    justify-content: center;
+    align-items: center;
+    fill:#AFB1B8;;
+
+}
+
+.social-link:hover {
+    background-color:var(--brand-color);
+    fill: var(--white-color);
+    border-radius: 50%;
+}
+
+.social-icon {
+    
+}
 /* --------------------Footer------------------- */
 
 .footer.section {
@@ -261,6 +313,14 @@ a {
     height: 252px;
 
     background-color: #2F303A;
+}
+
+.footer.container {
+    display: flex;
+}
+
+.address-wrap {
+    margin-right: 70px;
 }
 
 .footer-logo {
@@ -288,6 +348,28 @@ a {
     line-height: 1.71;
     
     color: rgba(255, 255, 255, 0.6);
+}
+.appeal-wrap {
+
+}
+
+.footer-appeal {
+    font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        text-transform: uppercase;
+    
+        color: #FFFFFF;
+}
+
+.social-link.footer {
+    fill: var(--white-color);
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+}
+
+.social-link.footer:hover {
+    background: var(--brand-color);
 }
 
 /*----------------------- Portfolio--------------------------- */
@@ -344,6 +426,10 @@ a {
 
 .projects-item:nth-child(n + 7) {
     margin-bottom: 0px;
+}
+
+.projects-image {
+    display: block;
 }
 
 .projects-text {
